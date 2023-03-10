@@ -1,0 +1,48 @@
+@model BodyTracker.Models.StarterWeight
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>StarterWeight</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.startdate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.startdate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.startweight)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.startweight)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.startbmi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.startbmi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.targetweight)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.targetweight)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.height)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.height)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
